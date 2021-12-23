@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary:#007bff;
+    --primary-soft:#e2dbdb;
+    --primary-second-soft:#f3f3f3;
+}
+.side-bar{
+overflow: scroll;
+}
+.content{
+background-color: var(--primary-soft);
+overflow: scroll;
+box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) inset;
+}
+.header{
+    position: sticky;
+    top: 0.2rem;
+    z-index: 1000;
+}
+.feather-menu{
+    cursor: pointer;
+}
+.user{
+    width: 30px;
+    height: 30px;
+    
+}
+.status-card{
+  transition: 0.5s;
+}
+.status-card:hover{
+    transform: rotate(5deg);
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) ;
+}
+.status-card:active{
+ transform: rotate(0deg);
+}
+.ov-img{
+    margin-left: -25px;
+}
+.carousel-card{
+    margin-top: -100px;
+}
+.item-card-img{
+    height: 200px;
+}
+
+@media screen and (max-width:780px){
+    .side-bar.col-12.col-lg-3.col-xl-2.vh-100{
+        position: fixed;
+    width: 300px;
+    z-index: 1001;
+    background-color: var(--primary-second-soft);
+    margin-left: -100%;
+    }
+    .product-card{
+        margin-top: 100px;
+    }
+}
+.dropdown-toggle::after {
+    display:none;
+}
+.dropdown-toggle::after {
+    display:none;
+}
+.dropdown-toggle:empty::after{
+    display: none;
+}
+.expand-item-list{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2005;
+    overflow: scroll;
+}
+.side-bar-menu{
+    text-decoration: none;
+    list-style: none;
+    
+}
+.menu-head{
+ text-transform: uppercase;
+ font-weight: bold;
+ color: #b4afaf;
+}
+.menu-item{
+
+ color: rgb(46, 46, 45);
+}
+.menu-li{  
+ padding:5px 5px;
+    transition: 0.4s;
+}
+.menu-space{
+ padding: 10px 0px;
+}
+.menu-li.active{
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    padding: 5px;
+}
+.menu-li:not(.active):hover{
+    background-color: var(--primary-second-soft);
+    border-radius: 0.25rem;
+    padding: 5px 0px;
+    text-decoration: none;
+    color: rgb(46, 46, 45);
+    transform: translateX(-3px);
+}
+.menu-item:hover{
+    text-decoration: none;
+    color: rgb(46, 46, 45);
+}
